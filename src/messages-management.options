@@ -1,0 +1,9 @@
+hw.trezor.messages.management.Features.vendor 					max_size:64
+hw.trezor.messages.management.Features.device_id				max_size:64
+hw.trezor.messages.management.Features.language					max_size:64
+hw.trezor.messages.management.Features.label					max_size:64
+hw.trezor.messages.management.Features.revision					max_size:64
+hw.trezor.messages.management.Features.bootloader_hash			max_size:64
+hw.trezor.messages.management.Features.model					max_size:64
+hw.trezor.messages.management.Features.fw_vendor				max_size:64
+hw.trezor.messages.management.Features.fw_vendor_keys			max_size:64

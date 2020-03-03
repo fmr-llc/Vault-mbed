@@ -1,0 +1,6 @@
+#ACTION=="add", SUBSYSTEM=="tty", ENV{ID_VENDOR}=="STMicroelectronics", ENV{ID_MM_CANDIDATE}="0", RUN+="/bin/stty -F $devnode 9600 cs8 -cstopb -parenb", TAG+="uaccess", TAG+="udev-acl", MODE="0660", GROUP="plugdev",
+#ACTION=="add", SUBSYSTEM=="tty", ENV{ID_VENDOR}=="STMicroelectronics", ENV{ID_MM_CANDIDATE}="0", RUN+="/bin/stty -F $devnode 9600 cs8 -cstopb -parenb", TAG+="uaccess", TAG+="udev-acl", MODE="0666", GROUP="plugdev",
+SUBSYSTEMS=="usb", KERNEL=="ttyACM[0-9]*", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", MODE+="0666"
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", MODE+="0666"
+# Allow users to mount the device (for installing firmware)
+#SUBSYSTEM=="block", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", MODE+="0666"
