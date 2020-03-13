@@ -1,0 +1,4 @@
+[submodule "nanopb"]
+	path = nanopb
+	url = https://github.com/nanopb/nanopb
+	branch = 0.4.0
